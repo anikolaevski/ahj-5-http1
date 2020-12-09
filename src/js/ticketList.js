@@ -1,5 +1,5 @@
 // eslint-disable-next-line import/prefer-default-export
-export class TicketList {
+class TicketList {
   constructor() {
     this.set = new Set();
   }
@@ -23,3 +23,7 @@ export class TicketList {
     return Array.from(this.set);
   }
 }
+
+module.exports = {
+  TicketList,
+};
